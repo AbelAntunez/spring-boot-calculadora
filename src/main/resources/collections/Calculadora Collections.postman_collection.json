@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "e2dc76a4-10bc-4d84-9178-b7dff180afd1",
+		"name": "Calculadora Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sumar dos números con símbolo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3772/api/v1/calculadora/calcula?primero=1&segundo=2&operacion=%2B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3772",
+					"path": [
+						"api",
+						"v1",
+						"calculadora",
+						"calcula"
+					],
+					"query": [
+						{
+							"key": "primero",
+							"value": "1"
+						},
+						{
+							"key": "segundo",
+							"value": "2"
+						},
+						{
+							"key": "operacion",
+							"value": "%2B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sumar dos números",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3772/api/v1/calculadora/calcula?primero=1&segundo=2&operacion=sumar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3772",
+					"path": [
+						"api",
+						"v1",
+						"calculadora",
+						"calcula"
+					],
+					"query": [
+						{
+							"key": "primero",
+							"value": "1"
+						},
+						{
+							"key": "segundo",
+							"value": "2"
+						},
+						{
+							"key": "operacion",
+							"value": "sumar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restar dos números con símbolo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3772/api/v1/calculadora/calcula?primero=1&segundo=2&operacion=%2B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3772",
+					"path": [
+						"api",
+						"v1",
+						"calculadora",
+						"calcula"
+					],
+					"query": [
+						{
+							"key": "primero",
+							"value": "1"
+						},
+						{
+							"key": "segundo",
+							"value": "2"
+						},
+						{
+							"key": "operacion",
+							"value": "%2B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Restar dos números",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3772/api/v1/calculadora/calcula?primero=1&segundo=2&operacion=%2B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3772",
+					"path": [
+						"api",
+						"v1",
+						"calculadora",
+						"calcula"
+					],
+					"query": [
+						{
+							"key": "primero",
+							"value": "1"
+						},
+						{
+							"key": "segundo",
+							"value": "2"
+						},
+						{
+							"key": "operacion",
+							"value": "%2B"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
