@@ -12,23 +12,25 @@
   <groupId>com.prueba.calculadora</groupId>
   <artifactId>calculadora</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <name>calculadora</name>
   <description>Proyecto spring boot calculadora</description>
   <properties>
     <java.version>11</java.version>
+    <start-class>com.prueba.calculadora.CalculadoraApplication</start-class>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
     <dependency>
       <groupId>com.tracer</groupId>
       <artifactId>tracer</artifactId>
       <version>1.0.0</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/tracer-1.0.0.jar</systemPath>
     </dependency>
+
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -52,6 +54,23 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+
+          </execution>
+        </executions>
+        <configuration>
+          <finalName>uber-${artifactId}-${version}</finalName>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
